@@ -22,6 +22,7 @@ To test Jonglera in an Android device, install the latest version of the Ionic C
 ```bash
 ionic cordova run android
 ```
+Jonglera-full.apk file is the built application, which was tested on Android 7.2. Be careful using this Jonglera version.
 
 ## Features
 
