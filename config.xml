@@ -91,7 +91,7 @@
     <allow-navigation href="http://127.0.0.1:8100" />
     <allow-navigation href="http://172.20.100.113:8100" />
     <plugin name="cordova-plugin-googlemaps" spec="^2.3.11">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyCOxFZefYS59GbuL6mPg95HcpMkyrXZPRI" />
+        <variable name="API_KEY_FOR_ANDROID" value="" />
         <variable name="PLAY_SERVICES_VERSION" value="15.0.1" />
         <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
     </plugin>
