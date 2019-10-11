@@ -1,0 +1,122 @@
+<!--
+  Generated template for the MalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Värderiktningar och mål</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+   <!-- Assign the FormGroup of form to the HTML form
+        via a property binding (allowing the component
+        class to communicate/interact with the template -->
+        <form
+        [formGroup]="form"
+        (ngSubmit)="manage(form.value)">
+         <ion-list
+            margin-bottom>
+
+
+           <!-- <ion-item
+              margin-bottom
+              no-lines>
+              <ion-label floating>Framework name:</ion-label>
+  
+            
+              <ion-input
+                 type="text"
+                 maxlength="40"
+                 formControlName="name"></ion-input>
+              <span>Please enter a framework name of no more than 40 characters</span>
+           </ion-item> -->
+  
+  
+           <!-- Assign the technologies FormArray to the form
+                where we want to track/generate new input track fields -->
+         <div
+            formArrayName="technologies"
+            margin-bottom>
+  
+  
+              <!-- Assign a FormGroupName property binding to track
+                   and manage each separate generated input field.
+                   Also iterate through the technologies FormArray to
+                   correctly track/render new input fields against
+                   existing fields -->
+              <section
+                 [formGroupName]="i"
+                 *ngFor="let tech of form.controls.technologies.controls; let i = index">
+                 <ion-item-group>
+                     <ion-item-divider color="light">#{{ i + 1 }}</ion-item-divider>
+                    <ion-item>
+                       <ion-label floating>Värderiktning:</ion-label>
+                       <ion-input
+                          type="text"
+                          maxlength="50"
+                          formControlName="name"></ion-input>
+                    </ion-item>
+  
+  
+                    <!-- Allow generated input field to be removed -->
+                    <span
+                       float-right
+                       ion-button
+                       icon-left
+                       clear
+                       *ngIf="form.controls.technologies.length > 1"
+                       (click)="removeInputField(i)">
+                       <ion-icon name="close"></ion-icon>
+                       ta bort
+                    </span>
+                 </ion-item-group>
+              </section>
+           </div>
+  
+  
+           <!-- Allow new input field to be generated/added -->
+           <span
+              ion-button
+              float-left
+              icon-left
+              clear
+              (click)="addNewInputField()">
+                 <ion-icon name="add"></ion-icon>
+                 Lägg till
+           </span>
+  
+  
+        </ion-list>
+  
+  
+        <!-- Only allow form to be submitted IF validation criteria for
+                input fields has been successfully passed -->
+           <!-- <button
+            ion-button
+            block
+            margin-top
+            color="primary"
+            text-center
+            [disabled]="!form.valid">Submit
+          </button> -->
+     </form>
+  
+    <!-- <ion-fab right bottom>
+      <button ion-fab><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="top">
+        <button ion-fab>Mål</button>
+        <button ion-fab>Riktning</button>
+      </ion-fab-list>
+    </ion-fab> -->
+
+
+</ion-content>

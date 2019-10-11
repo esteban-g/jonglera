@@ -1,0 +1,322 @@
+page-home {
+
+  #cart-btn {
+    position: relative;
+ }
+ 
+ #cart-badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+ }
+
+
+    .about-header {
+        background-color: #434954;
+        padding: 16px;
+        width: 100%;
+        min-height: 150px;
+        text-align: center;
+      }
+      
+      
+
+      .about-header img {
+        max-width: 200px;
+        min-height: 115px;
+        margin-left: -15px;
+        padding: 25px 0 20px 0;
+      }
+      
+      .about-info p {
+        color: #697072;
+        text-align: left;
+      }
+      
+      .about-info ion-icon {
+        color: color($colors, primary);
+        width: 20px;
+      }
+      
+      .md,
+      .wp {
+        .about-info [text-right] {
+          margin-right: 0;
+        }
+      }
+      
+      .ios .about-info {
+        text-align: center;
+      }
+      
+      .ios .about-info ion-icon {
+        width: auto;
+        margin-right: 10px;
+      }
+      
+      .scroll-content {
+        display: table !important;
+        width: 100% !important;
+        height: 70% !important;
+      }
+      .scroll {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      
+      ion-col div {
+         //background-color: #FF0000;
+        // border: 1px solid #e6e9ee;
+      
+        border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+      }
+      
+      
+      
+      .jonglera{
+        
+        border: 1px solid color($colors, secondary);
+        height: 100px;
+        width: 100px;
+        
+      
+        background-image: url("../assets/img/d-bulb.png");
+      
+      }
+      
+      .jongle-nu{
+        background: transparent;
+        height: 80px;
+        width: 80px;
+        border-radius: 45px;
+        background-image: url("../assets/img/g-nu.png");
+        //background-image: url("../../assets/icon/g-nu.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      .jongle-mal{
+        background: transparent;
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        background-image: url("../assets/img/g-mal.png");
+        //background-image: url("../../assets/icon/g-nu.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      .jongle-framtida{
+        background: transparent;
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        background-image: url("../assets/img/g-framtida.png");
+        //background-image: url("../../assets/icon/g-framtida.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      .jongle-fragor{
+        background: transparent;
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        background-image: url("../assets/img/g-fragor.png");
+        //background-image: url("../../assets/icon/g-fragor.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      
+      .jongle-planering{
+        background: transparent;
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        background-image: url("../assets/img/g-planering.png");
+        //background-image: url("../../assets/img/g-planering.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      
+      .jongle-calendar{
+        background: transparent;
+        height: 90px;
+        width: 90px;
+        border-radius: 35px;
+        background-image: url("../assets/img/d-calendar.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      .jongle-aktiv{
+        background: transparent;
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        // background-image: url("../../assets/img/d-heart.png");
+        background-image: url("../assets/img/g-aktivitet.png");
+        //background-image: url("../../assets/img/g-aktivitet.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      
+      .jongle-minitop{
+        background: transparent;
+        //background-color: #434954;
+        height: 30px;
+        width: 30px;
+        //border-radius: 45px;
+        background-image: url("../assets/img/mini-vecka.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      .jongle-ini{
+        background: transparent;
+        fab-size: 70px;
+        // border-radius: 35px;
+        background-image: url("../assets/img/cat1.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+
+      .jongle-chum{
+        background: transparent;
+        height: 130px;
+        width: 130px;
+        // border-radius: 35px;
+        background-image: url("../assets/img/cat1.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+
+      .centerx {
+        background: transparent;
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .fab[mini] {
+      margin: 8px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+  }
+    .fab {
+      // width: 70px !important;
+      // height: 70px !important;
+      // line-height: 40px  !important;
+      // border-radius: 50%;
+      // margin: -10px;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      position: relative;
+      z-index: 0;
+      display: block;
+      overflow: hidden;
+      
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      font-size: 30px;
+      line-height: 56px;
+      text-align: center;
+      text-overflow: ellipsis;
+      text-transform: none;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background-color, opacity 100ms linear;
+      background-clip: padding-box;
+      -webkit-font-kerning: none;
+      font-kerning: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      contain: layout;
+      
+      
+      }
+
+    .fab-container {
+      position: relative;
+    }
+            
+      .jongle-champ{
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        // background-position: center; 
+      }
+      
+      
+      .jongle-emergency{
+        background: transparent;
+        height: 66px;
+        width: 66px;
+        // border-radius: 35px;
+        background-image: url("../assets/img/d-attention2.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      }
+      
+      .jongle-dailyplan{
+        
+      
+        background: transparent;
+        height: 150px;
+        width: 150px;
+        background-image: url("../assets/img/dailyplan.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      
+      }
+      
+      
+      .jongle-activitynow{
+        
+      
+        background: transparent;
+        height: 150px;
+        width: 150px;
+        background-image: url("../assets/img/dailyplan.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+      
+      }
+      
+      
+      #borderimg {
+        border-image: url("../assets/img/d-add.png") 30 round;
+      }
+
+      .action-sheets-basic-page {
+        .ion-md-share {
+          color: #ED4248;
+        }
+        .ion-md-arrow-dropright-circle {
+          color: #508AE4;
+        }
+        .ion-md-heart-outline {
+          color: #31D55F;
+        }
+        .action-sheet-cancel ion-icon,
+        .action-sheet-destructive ion-icon {
+          color: #757575;
+        }
+      }
+      
+}
+
+

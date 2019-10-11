@@ -1,0 +1,134 @@
+<!--
+  Generated template for the ExplanationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Configure your agents </ion-title>
+
+    <ion-buttons end>
+
+      <button ion-button (click)="dismiss()"> Close
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Personalize your feedback</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Your coach has three intelligent trackers to provide you recommendations regarding your <b>activities</b>, <b>context</b>, and <b>social</b> environment.
+      You can activate or desactivate those features here.
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-list no-border>
+
+    <ion-list-header>
+      <h1><b>Activity tracking</b> </h1>
+    </ion-list-header>
+
+
+    <ion-item>
+      <ion-icon name='body' item-start></ion-icon>
+      Last activity inferred
+      <ion-note item-end>
+        At home <br> 86% confidence
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="true"></ion-toggle>
+      <ion-label>
+        Automatic detection
+      </ion-label>
+      <ion-icon name='body' item-start></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-list>
+
+    <ion-list-header>
+
+      <h1><b>Context tracking</b> </h1>
+    </ion-list-header>
+
+    <ion-item>
+      Last location inferred
+      <ion-icon name="locate"></ion-icon>
+      <ion-note item-end>Home<br> 98% confidence</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="true"></ion-toggle>
+      <ion-label>
+        Automatic detection
+      </ion-label>
+      <ion-icon name="navigate"></ion-icon>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon name='wine' item-start></ion-icon>
+      Preferred locations inferred
+      <ion-note item-end>63.8198313,20.306895<br> 71% confidence</ion-note>
+    </ion-item>
+
+
+  </ion-list>
+
+  <ion-list>
+
+    <ion-list-header>
+      <h1><b> Social tracking</b> </h1>
+
+    </ion-list-header>
+
+    <ion-item>
+      <ion-toggle checked="true"></ion-toggle>
+      <ion-label>
+        Automatic detection
+      </ion-label>
+      <ion-icon name="people"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="contacts"></ion-icon>
+      Last social connection
+      <ion-note item-end>SMS friend<br>Esteban<br> 98% confidence</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='book' item-start></ion-icon>
+      Inferred social activity
+      <ion-note item-end>IKSU gym <br> 72% confidence</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='beer' item-start></ion-icon>
+      Ron
+      <ion-note item-end>Brilliant!</ion-note>
+    </ion-item>
+
+
+  </ion-list>
+
+
+</ion-content>

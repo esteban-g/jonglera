@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Jonglera</ion-title>
+
+    <!-- <ion-buttons end>
+      <button ion-button icon-only (click)="openNotifications()">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge item-end>6</ion-badge>
+      </button>
+
+    </ion-buttons> -->
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+
+
+  <ion-fab right top #fab1>
+    <button ion-fab color="favorite">Frågor</button>
+    <ion-fab-list side="bottom">
+
+      <button ion-fab (click)="presentQuestion3Modal()"> Nu!</button>
+
+
+      <button ion-fab (click)="presentQuestion1Modal()">
+        <ion-icon name="sunny"></ion-icon>
+      </button>
+      <button ion-fab (click)="presentQuestion2Modal()">
+        <ion-icon name="moon"></ion-icon>
+      </button>
+
+    </ion-fab-list>
+  </ion-fab>
+
+
+
+  <img src="{{clickedImagePath}}" />
+  <ion-list>
+    <ion-item *ngFor="let match of matches">
+      {{ match }}
+    </ion-item>
+  </ion-list>
+  <!-- <ion-grid class="scroll">
+
+
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <button ion-button  (click)="goNowPage()"></button>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <button ion-button class="jongle-planering" (click)="goPlanneringPage()"></button>
+      </ion-col>
+      <ion-col>
+        <ion-img class="jongle-champ" [src]="picToView" (click)="openCoach()"></ion-img>
+        <button ion-button class="jongle-champ"  (click)="openCoach()"></button>
+      </ion-col>
+      <ion-col>
+        <button ion-button class="jongle-mal" (click)="goGoalPage()"></button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  -->
+
+
+
+  <ion-footer style="background:#ffccff">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label fixed>Hej hej!</ion-label>
+            <ion-input type="text" value=""></ion-input>
+            <button ion-button tooltip="I'm a tooltip below a button" positionV="bottom" arrow>
+              <ion-icon name="mic"></ion-icon>
+            </button>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <button ion-button (click)="startListening()">
+            <ion-icon name="mic"></ion-icon>
+          </button>
+          <div><br></div>
+        </ion-col>
+        <ion-col>
+            <button ion-button (click)="takePicture()">
+                <ion-icon name="camera"></ion-icon>
+            </button>
+            <div><br></div>
+          </ion-col>
+        <ion-col style="text-align: right">
+          <ion-img class="jongle-champ"
+            style="height: 105%; width: 105%; background: transparent; background-repeat: no-repeat        "
+            [src]="picToView" (click)="presentPopover()"></ion-img>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+
+  <!-- </div> -->
+</ion-content>

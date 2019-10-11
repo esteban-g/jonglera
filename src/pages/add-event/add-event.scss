@@ -1,0 +1,38 @@
+page-add-event {
+    .ion-05x { font-size: 10px !important;}
+    .ion-1x { font-size: 24px !important;}
+    .ion-2x { font-size: 48px !important;}
+
+    
+    .action-sheets-feelings {
+        .ion-select-protect {
+        color: #ED4248;
+        }
+        .ion-select-driving {
+        color: #508AE4;
+        }
+        .ion-select-soothing {
+        color: #31D55F;
+        }
+        .action-sheet-cancel ion-icon,
+        .action-sheet-destructive ion-icon {
+        color: #757575;
+        }
+    }
+
+    .action-sheets-basic-page {
+        .ion-md-share {
+          color: #ED4248;
+        }
+        .ion-md-arrow-dropright-circle {
+          color: #508AE4;
+        }
+        .ion-md-heart-outline {
+          color: #31D55F;
+        }
+        .action-sheet-cancel ion-icon,
+        .action-sheet-destructive ion-icon {
+          color: #757575;
+        }
+      }
+}

@@ -1,0 +1,83 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+  "SIGNUP": "Sign up",
+
+  "TAB1_TITLE": "Hem",
+  "TAB2_TITLE": "Planner",
+  "TAB3_TITLE": "Din dag",
+  "TAB4_TITLE": "Träning",
+  "TAB5_TITLE": "Mål",
+
+
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to <strong>Jonglera</strong>",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "This is a complement to your  <br> <i>stress-rehabilitation</i>",
+
+  "TUTORIAL_SLIDE2_TITLE": "Med Jonglera",
+  "TUTORIAL_SLIDE2_DESCRIPTION": " kan du få hjälp med att...",
+
+  "TUTORIAL_SLIDE3_TITLE": "Planera och <br> strukturera dina dager...",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "",
+
+  "TUTORIAL_SLIDE4_TITLE": "... balansera dina färger...",
+  "TUTORIAL_SLIDE4_DESCRIPTION": "",
+
+
+  "TUTORIAL_SLIDE5_TITLE": "... bli påmind om dina planer och att stanna upp",
+  "TUTORIAL_SLIDE5_DESCRIPTION": "",
+
+
+  "TUTORIAL_SLIDE6_TITLE": "A smart coach to help you managing your day",
+  "TUTORIAL_SLIDE6_DESCRIPTION": "",
+
+  
+  "TUTORIAL_SLIDE7_TITLE": "A smart coach to help you  managing your day",
+
+  "WELCOME_INTRO": "The starting point for your next great Ionic app",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Sign in",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+}

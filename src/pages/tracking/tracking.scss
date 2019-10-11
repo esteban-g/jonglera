@@ -1,0 +1,47 @@
+page-tracking {
+    #map {
+        height: 100%;
+}
+
+
+.digit {
+	font-size: xx-large;
+	margin: 15px;
+	padding: 5px;
+}
+
+.action {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+.scroll-content {
+    display: table !important;
+    width: 100% !important;
+    height: 70% !important;
+  }
+  .scroll {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+
+  .jongle-nu{
+    background: transparent;
+    height: 80px;
+    width: 80px;
+    border-radius: 45px;
+    background-image: url("../assets/img/g-nu.png");
+    //background-image: url("../../assets/icon/g-nu.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+
+  ion-iconXXX {
+    font-size: 150px; //Preferred size here
+    text-align: center;
+
+}
+}

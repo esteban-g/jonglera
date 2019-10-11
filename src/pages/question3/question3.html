@@ -1,0 +1,61 @@
+<!--
+  Generated template for the QuestionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-header>
+
+  <!-- <ion-navbar>
+    <ion-title>Frågeformulär 1</ion-title>
+  </ion-navbar> -->
+
+  <ion-toolbar>
+    <ion-title>Nu frågor</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" fill="outline"  (click)="dismiss()">
+        Stäng
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="addresponse()">
+    <!-- 
+      <ion-title>
+        <ion-icon color="subtle" large item-start name='moon'></ion-icon>
+        <h2>Hur mentalt ansträngande har din dag varit? </h2>
+        <p>Hur har du sovit? </p>
+      </ion-title> -->
+
+
+    <ion-card>
+      <ion-card-header>Hur känner du dig just nu?</ion-card-header>
+    <ion-range min="-3" max="3" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q2" name="d" color="danger">
+      <ion-label range-left class="level-label">Nedstämd</ion-label>
+      <ion-label range-right class="level-label">Glad</ion-label>
+    </ion-range>
+    <ion-range min="-3" max="3" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q3" name="d" color="danger">
+      <ion-label range-left class="level-label">Ångestfylld</ion-label>
+      <ion-label range-right class="level-label">Lugn</ion-label>
+    </ion-range>
+    <ion-range min="-3" max="3" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q4" name="d" color="danger">
+      <ion-label range-left class="level-label">Utmattad</ion-label>
+      <ion-label range-right class="level-label">Full av energi</ion-label>
+    </ion-range>
+    <ion-range min="-3" max="3" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q5" name="d" color="danger">
+      <ion-label range-left class="level-label">Stressad</ion-label>
+      <ion-label range-right class="level-label">Avspänd</ion-label>
+    </ion-range>
+  </ion-card>>
+
+    <button ion-button block (click)="dismiss()">Spara</button>
+
+  </form>
+
+</ion-content>

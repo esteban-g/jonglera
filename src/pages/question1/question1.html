@@ -1,0 +1,84 @@
+<!--
+  Generated template for the QuestionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-header>
+
+  <!-- <ion-navbar>
+    <ion-title>Frågeformulär 1</ion-title>
+  </ion-navbar> -->
+
+  <ion-toolbar>
+    <ion-title>Morgonfrågor</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" fill="outline"  (click)="dismiss()">
+        Stäng
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <form (ngSubmit)="addresponse()">
+
+  <ion-title>
+      <ion-icon color="subtle" large item-start name='moon'></ion-icon>
+      <h2>Skatta din sömn</h2>
+      <p>Hur har du sovit? </p>  </ion-title>
+
+  <ion-card>
+    <!-- <ion-list-header>
+              Motivation level
+            </ion-list-header> -->
+    <ion-item>
+      <ion-label floating>Hur många timmar?
+        <p>(uppskattar antal timmar)</p>
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="responsesq1.q1" name="title"></ion-input>
+      
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-header>Svårt att somna? </ion-card-header>
+    <ion-range min="0" max="5" step="1" pin="true" snaps="true"  [(ngModel)]="responsesq1.q2" name="dd" color="danger">
+      <p>sss</p>
+      <ion-label range-left class="level-label">inte</ion-label>
+      <ion-label range-right class="level-label">mycket svårt</ion-label>
+      <!-- <ion-icon range-left small color="primary" name="happy"></ion-icon>
+          <ion-icon range-right color="primary" name="sad"></ion-icon> -->
+    </ion-range>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label floating>Många uppvaknanden?
+        <p>(uppskatta antalet uppvaknanden)</p>
+      </ion-label>
+
+      <ion-input type="text"  [(ngModel)]="responsesq1.q3"  name="x"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>Känner du dig utvilad? </ion-card-header>
+    <ion-range min="0" max="5" step="1" pin="true" snaps="true"  [(ngModel)]="responsesq1.q4" name="dd" color="danger">
+      <ion-label range-left class="level-label">inte</ion-label>
+      <ion-label range-right class="level-label">mycket utvilad</ion-label>
+      <!-- <ion-icon range-left small color="primary" name="battery-full"></ion-icon>
+        <ion-icon range-right color="primary" name="battery-dead"></ion-icon> -->
+    </ion-range>
+
+  </ion-card>
+
+  <button ion-button block (click)="dismiss()">Spara</button>
+
+</form>
+
+</ion-content>

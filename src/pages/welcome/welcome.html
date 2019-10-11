@@ -1,0 +1,170 @@
+<ion-header dir="ltr">
+  <ion-toolbar>
+    <!-- <ion-buttons left>
+        <button ion-button icon-only color="royal" menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+   -->
+    <ion-title>Välja din coach</ion-title>
+
+    <ion-buttons class="btn_tool" right>
+      <button ion-button icon-only color="royal" (click)="openModal()">
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <!-- <ion-buttons class="btn_tool" right>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="cart"></ion-icon>
+        </button>
+      </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+<!-- <ion-header>
+    <ion-navbar [color]="isAndroid ? 'royal' : 'light'">
+      <ion-buttons start>
+        <button ion-button color="royal" icon-only showWhen="ios,windows">
+          <ion-icon name="search"></ion-icon>
+        </button>
+        <button ion-button color="light" icon-only hideWhen="ios,windows">
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>Välja din coach</ion-title>
+      <ion-buttons end>
+        <button ion-button color="royal" icon-only showWhen="ios,windows">
+          <ion-icon name="person-add"></ion-icon>
+        </button>
+        <button ion-button color="light" icon-only hideWhen="ios,windows">
+          <ion-icon name="person-add"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header> -->
+
+<ion-content>
+  <ion-list>
+
+
+
+
+ 
+
+
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/c1.png">
+      </ion-thumbnail>
+      <h2><b>Totoro</b></h2>
+      <p>It is friendly but... </p>
+      <p>it prefers no to be disturbed</p>
+      <button ion-button clear item-end (click)="signup(1)">Välja</button>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/c2.png">
+      </ion-thumbnail>
+      <h2>Mimiko</h2>
+      <p>It will remind you only important things </p>
+      <p>... it dismisses for you the rest </p>
+      <button ion-button clear item-end (click)="signup(2)">Välja</button>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/c3.png">
+      </ion-thumbnail>
+      <h2>Haku</h2>
+      <p>It keeps a balance between</p>
+      <p> important and secondary tasks </p>
+      <button ion-button clear item-end (click)="signup(3)">Välja</button>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/c4.png">
+      </ion-thumbnail>
+      <h2>Chihiro</h2>
+      <p>A little bit stubborn, </p>
+      <p>always trying the best for you</p>
+      <button ion-button clear item-end (click)="signup(4)">Välja</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/c5.png">
+      </ion-thumbnail>
+      <h2>Roboto</h2>
+      <p>It likes plans and things done</p>
+      <p>It will remind you how to achieve goals</p>
+      <p>... <i>persistently</i></p>
+      <button ion-button clear item-end (click)="signup(5)">Välja</button>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-card>
+      <ion-card-header>            
+          <ion-card-title>Customize your coach </ion-card-title>
+        </ion-card-header>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/img/c4.png" style="width:64px;height:64px;">
+      </ion-avatar>
+      <h2>Totoro</h2>
+    </ion-item>
+
+    <ion-card-content>
+        <p>You can configure the behavior of your coach. Try different combinations, from warm (<ion-icon name="flame"></ion-icon>) human-like (<ion-icon name="desktop"></ion-icon>) messages, to a more direct (<ion-icon name="snow"></ion-icon>) and straightforward (<ion-icon name="desktop"></ion-icon>) recommendations. </p>
+        
+      </ion-card-content>
+
+    <ion-range min="1000" max="2000" step="100" snaps="true" [(ngModel)]="warmth" color="secondary">
+      <ion-icon range-left large color="dark" name="desktop"></ion-icon>
+      <ion-icon range-right large color="dark" name="body"></ion-icon>
+    </ion-range>
+    <ion-range min="1000" max="2000" step="100"  snaps="true" [(ngModel)]="messag" color="secondary">
+        <ion-icon range-left small color="primary" name="chatboxes"></ion-icon>
+        <ion-icon range-right large color="danger" name="chatboxes"></ion-icon>
+      </ion-range>
+      <ion-range min="1000" max="2000" step="100" snaps="true" [(ngModel)]="hotness" color="secondary">
+          <ion-icon range-left color="primary" name="snow"></ion-icon>
+          <ion-icon range-right  color="danger" name="flame"></ion-icon>
+        </ion-range>
+    
+
+
+        <button ion-button block>Save</button>
+
+  </ion-card>
+
+
+
+
+  <!--   
+    <div padding>
+      <button ion-button color="royal" block (click)="openModal()">Sign In</button>
+    </div> -->
+
+</ion-content>
+
+<!-- <ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      {{ 'WELCOME_INTRO' | translate }}
+    </div>
+  </div>
+  <div padding>
+    <button ion-button block (click)="signup()">{{ 'SIGNUP' | translate }}</button>
+    <button ion-button block (click)="login()" class="login">{{ 'LOGIN' | translate }}</button>
+  </div>
+</ion-content> -->

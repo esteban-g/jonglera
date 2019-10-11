@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Activity tracking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- <ion-content> -->
+<!-- <ion-content class="map-page"> -->
+<ion-content>
+  <!-- <div style="height: 50%; width: 100%" #mapcanvas id="mapcanvas"></div> -->
+  <!-- <div #map id="map"></div> -->
+
+  <ion-card style="height: 300px; width: 100%">
+    <!-- <ion-card-header>
+      Ready
+    </ion-card-header> -->
+    <!-- <div style="height: 50%; width: 100%" #mapcanvas id="mapcanvas"></div> -->
+    <div style="height: 80%; width: 100%" #mapcanvas id="mapcanvas"></div>
+
+    <!-- <div id="starttime">{{starttime}}</div> -->
+  </ion-card>
+
+  <ion-card>
+      <p id="demo">1</p>
+      <p>{{clocky}}</p>
+      <!-- <ion-datetime displayFormat="HH:mm" [(ngModel)]="starttime"></ion-datetime> -->
+  </ion-card>
+
+
+
+  <ion-card>
+    <ion-card-header>
+        Select an exercise
+    </ion-card-header>
+      <ion-select [(ngModel)]="zone.kind">
+      
+        <ion-option *ngFor="let item of items">{{item}}</ion-option>
+      </ion-select>
+
+    <!-- <button ion-button class="jongle-nu"></button> -->
+
+    <div padding>
+      <button ion-button color="primary" block (click)="startButton()">START</button>
+    </div>
+    <!-- <div class="digit">
+        <span class="label label-default">{{timer.minutes | twoDigit}}</span> :
+        <span class="label label-default">{{timer.secondes | twoDigit}}</span>
+    </div> -->
+
+  </ion-card>
+
+
+
+
+  <ion-card>
+  <h1><time>00:00:00</time></h1>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+  <button id="clear">clear</button>
+  </ion-card>
+  <!--
+          <ion-grid class="scroll">
+
+            <ion-row>
+            <ion-col>              
+            </ion-col>
+
+            <ion-col>
+                <button ion-button class="jongle-nu" ></button>
+            </ion-col>
+
+            <ion-col>              
+            </ion-col>
+          </ion-row>
+    
+        </ion-grid> -->
+
+
+
+
+  <!-- <p>Lat:{{ lat }}</p>
+  <p>Long:{{ lng }}</p>
+
+  <p>XX {{ extravar }}</p> -->
+</ion-content>

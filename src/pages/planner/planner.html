@@ -1,0 +1,179 @@
+<!--
+  Generated template for the PlannerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Planering</ion-title>
+
+    <ion-buttons end>
+
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+
+
+
+
+
+<ion-content>
+
+
+  <ion-fab right bottom #fab5e>
+    <button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <!-- <button ion-fab (click)="openSocial('help', fab4)">
+        <ion-icon name="help"></ion-icon>
+      </button> -->
+      <button ion-fab (click)="addEvent()">
+        aktiv
+      </button>
+      <button ion-fab>
+        <ion-icon name="people"></ion-icon>
+      </button>
+
+      <button ion-fab>
+        <ion-icon name="pizza"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="bicycle"></ion-icon>
+      </button>
+
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab left bottom>
+    <button ion-fab color="danger"><ion-icon name="help"></ion-icon></button>
+    <ion-fab-list side="top">
+      <!-- <button ion-fab (click)="openSocial('help', fab4)">
+        <ion-icon name="help"></ion-icon>
+      </button> -->
+      <button ion-fab>
+        <ion-icon name="call"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="bulb"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-card>
+    <div class="calendar-header">
+      <ion-row class="calendar-month">
+
+        <ion-col col-2 (click)="goToLastMonth()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-col>
+        <ion-col col-8>{{currentMonth}} {{currentYear}}</ion-col>
+        <ion-col col-2 (click)="goToNextMonth()">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="calendar-body">
+      <ion-grid>
+        <ion-row class="calendar-weekday">
+          <ion-col>Su</ion-col>
+          <ion-col>Mo</ion-col>
+          <ion-col>Tu</ion-col>
+          <ion-col>We</ion-col>
+          <ion-col>Th</ion-col>
+          <ion-col>Fr</ion-col>
+          <ion-col>Sa</ion-col>
+        </ion-row>
+        <!-- <ion-row>
+              <ion-col>s</ion-col>
+              <ion-col class="event-bullet">s</ion-col>
+              <ion-col class="event-bullet" *ngIf=true>s</ion-col>
+              <ion-col class="otherDate">s</ion-col>
+              <ion-col class="currentDate">s</ion-col>
+              <ion-col>s</ion-col>
+              <ion-col>s</ion-col>
+            </ion-row> -->
+        <ion-row class="calendar-date">
+
+          <ion-col col-1 *ngFor="let lastDay of daysInLastMonth" class="last-month" (click)="goToLastMonth()">{{lastDay}}</ion-col>
+
+          <ion-col col-1 *ngFor="let day of daysInThisMonth" (click)="selectDate(day)">
+
+            <span class="currentDate" *ngIf="currentDate === day; else otherDate">{{day}}</span>
+            <ng-template #otherDate class="otherDate">
+              {{day}}
+              <br>
+              <div class="event-bullet" *ngIf="checkEvent(day)"></div>
+            </ng-template>
+
+          </ion-col>
+
+          <ion-col col-1 *ngFor="let nextDay of daysInNextMonth" class="next-month" (click)="goToNextMonth()">{{nextDay}}</ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+
+
+    <div class="selected-event" *ngIf="isSelected">
+      <ion-list>
+        <ion-item *ngFor="let se of selectedEvent">
+          <ion-card>
+            <ion-buttons end>
+              <button ion-button clear icon-only (click)="deleteEvent(se)">Delete event
+                <ion-icon name="close"></ion-icon>
+              </button>
+            </ion-buttons>
+
+            <h2>{{se.title}}</h2>
+            <h3>{{se.message}}</h3>
+            <p>Start Date: {{se.startDate}}
+              <br> Start Date: {{se.endDate}}</p>
+
+          </ion-card>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <!-- <button ion-button (click)="addEvent();">
+      New Event
+      <ion-icon name="add-circle"></ion-icon>
+    </button> -->
+  </ion-card>
+
+
+
+
+
+
+<!-- FUNCIONA MUY BIEN 
+    <ion-list class="scrollable">
+      
+        <ion-item *ngFor="let items of itemsdata" color="light">          
+          <ion-label>{{ items }} <b>sss</b></ion-label>
+          
+          <ion-checkbox color="dark" checked="true" item-end></ion-checkbox>
+          </ion-item>
+
+    </ion-list>
+
+ -->
+
+
+
+
+
+  
+</ion-content>

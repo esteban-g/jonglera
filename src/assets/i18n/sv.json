@@ -1,0 +1,66 @@
+{
+  "NAME": "Namn",
+  "PASSWORD": "Lösenord",
+  "EMAIL": "E-post",
+  "LOGIN": "Logga in",
+  "SIGNUP": "Skapa konto",
+
+  "TAB1_TITLE": "Hem",
+  "TAB2_TITLE": "Planner",
+  "TAB3_TITLE": "Kalender",
+  "TAB4_TITLE": "Träning",
+  "TAB5_TITLE": "Mål",
+
+  "MAP_TITLE": "Karta",
+
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to <strong>Jonglera</strong>",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "This is a complement to your  <br> <i>stress-rehabilitation</i>",
+
+
+  "TUTORIAL_SLIDE2_TITLE": "Med Jonglera",
+  "TUTORIAL_SLIDE2_DESCRIPTION": " kan du få hjälp med att...",
+
+  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+
+  "TUTORIAL_SLIDE4_TITLE": "Planera och strukturera dina dager...",
+  "TUTORIAL_SLIDE4_DESCRIPTION": "",
+
+
+  "TUTORIAL_SLIDE5_TITLE": "... balansera dina färger...",
+  "TUTORIAL_SLIDE5_DESCRIPTION": "",
+
+
+  "TUTORIAL_SLIDE6_TITLE": "... bli påmind om dina planer och att stanna upp",
+  "TUTORIAL_SLIDE6_DESCRIPTION": "",
+
+  
+  "TUTORIAL_SLIDE7_TITLE": "En smart <b>coach</b> hjälper dig att planera din dag",
+
+  "SETTINGS_TITLE": "Inställningar",
+  "SETTINGS_OPTION1": "Alternativ 1",
+  "SETTINGS_OPTION2": "Alternativ 2",
+  "SETTINGS_OPTION3": "Alternativ 3",
+  "SETTINGS_OPTION4": "Alternativ 4",
+
+  "SETTINGS_PAGE_PROFILE": "Redigera profil",
+
+  "WELCOME_TITLE": "Välkommen",
+
+  "LOGIN_TITLE": "Logga in",
+  "LOGIN_ERROR": "Det gick inte att logga in. Kontrollera inloggningsuppgifterna och försök igen.",
+  "LOGIN_BUTTON": "Logga in",
+  "SIGNUP_TITLE": "Skapa konto",
+  "SIGNUP_ERROR": "Det gick inte att skapa ett konto. Kontrollera dina uppgifter och försök igen.",
+  "SIGNUP_BUTTON": "Skapa konto",
+
+  "LIST_MASTER_TITLE": "Inlägg",
+
+  "ITEM_CREATE_TITLE": "Nytt inlägg",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Lägg till bild",
+
+  "CARDS_TITLE": "Socialt",
+
+  "SEARCH_TITLE": "Sök"
+}

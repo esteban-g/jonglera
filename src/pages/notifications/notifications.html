@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Aviseringar</ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" fill="outline" (click)="dismiss()">
+        Stäng
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="list-avatar-page">
+
+  <ion-list no-border>
+
+    <ion-list-header>
+      Saknade frågor: <!-- min_{{minutes}} sec_{{secondes}} timer_{{timer}} -->
+    </ion-list-header>
+
+    <ion-list>
+      <button ion-item *ngFor="let quest of questiondata" (click)="questionSelected(quest.question)">
+          <ion-icon [name]='quest.icon' item-start></ion-icon>
+          <ion-badge item-start>{{quest.numb}}</ion-badge>       
+        <!-- {{ quest.question }} -->
+        <ion-label item-end>{{quest.question}}</ion-label>
+
+      </button>  
+    </ion-list>
+    <!-- <ion-list        *ngFor="let quest of questiondata" color="light">
+      
+      <ion-icon [name]='quest.icon' item-start></ion-icon>
+      <ion-badge item-start>{{quest.numb}}</ion-badge>
+      <ion-label>{{quest.question}}</ion-label>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ quest.question }}
+      </button> 
+    
+    </ion-list> -->
+    
+    <!-- <button ion-button [color]="activ.color" [outline]="activ.outline" [solid]="activ.solid" item-end (click)="openMenu()">{{ activ.name }}</button> -->
+
+<!-- 
+    <ion-list>
+      <button ion-item *ngFor="let item of itemquestions" (click)="questionSelected(item)">
+        {{ item }}
+      </button>
+    </ion-list>
+
+    <ion-item>
+      <ion-icon name='sunny' item-start></ion-icon>
+      <ion-badge item-end>260k</ion-badge>
+      <ion-label>Morgon frågor</ion-label>
+      <button ion-button icon-end>
+
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='moon' item-start></ion-icon>
+      <ion-badge item-end>260k</ion-badge>
+      <ion-label>Daenerys Targaryen</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      Nu!
+      <ion-badge item-end>260k</ion-badge>
+      <ion-label>Daenerys Targaryen</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+ -->
+
+
+
+
+  </ion-list>
+
+
+</ion-content>

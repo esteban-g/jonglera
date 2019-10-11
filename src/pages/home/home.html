@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+
+    <ion-title>Jonglera</ion-title>
+
+    <ion-buttons end>
+      <!--       <button ion-button class="jongle-minitop"></button>
+ -->
+      <!--       <button id="cart-btn" ion-button icon-only (click)="openCoach()">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge id="cart-badge">26</ion-badge>
+      </button> 
+ -->
+      <button ion-button icon-only (click)="openNotifications()">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge item-end>6</ion-badge>
+        <!-- {{timer}} -->
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <ion-fab right bottom #fab1>
+    <button ion-fab color="favorite">Frågor</button>
+    <ion-fab-list side="top">
+
+      <button ion-fab (click)="presentQuestion3Modal()"> Nu!</button>
+
+      <!-- <button ion-fab (click)="openSocial('facebook', fab4)"><ion-icon name="logo-facebook"></ion-icon></button> -->
+      <button ion-fab (click)="presentQuestion1Modal()">
+        <ion-icon name="sunny"></ion-icon>
+      </button>
+      <button ion-fab (click)="presentQuestion2Modal()">
+        <ion-icon name="moon"></ion-icon>
+      </button>
+
+    </ion-fab-list>
+  </ion-fab>
+
+
+  <!-- <ion-card>
+    <ion-card-header>
+      Tidigare svar på dina dagliga frågor
+    </ion-card-header>
+
+    <ion-list inset>
+      <button ion-item *ngFor="let item of arrayx">
+        {{ item.respvalue }} _{{ item.id }}
+      </button>
+    </ion-list>
+    <button ion-button (click)="checkAnswers()">
+      Uppdatera</button>
+  </ion-card> -->
+
+
+
+
+</ion-content>

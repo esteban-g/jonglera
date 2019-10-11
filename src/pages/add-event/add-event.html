@@ -1,0 +1,106 @@
+<!--
+  Generated template for the AddEventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+
+    <ion-title>Lägg till en ny händelse</ion-title>
+
+    <ion-buttons end>
+
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <!-- <form (ngSubmit)="addeventform()"> -->
+  <form (ngSubmit)="addeventform()">
+    <ion-list>
+      <!-- <ion-list-header>World Times</ion-list-header> -->
+      <ion-item>
+        <ion-label>Title</ion-label>
+        <ion-input type="text" [(ngModel)]="newevent.title" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Location</ion-label>
+        <ion-textarea [(ngModel)]="newevent.location" name="description"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Notes</ion-label>
+        <ion-textarea [(ngModel)]="newevent.notes" name="description"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Start date</ion-label>
+        <ion-icon name="calendar" item-start></ion-icon>
+        <!-- <ion-textarea [(ngModel)]="newevent.startdate" name="description"></ion-textarea> -->
+        <ion-datetime displayFormat="DD MMM YYYY" pickerFormat="MM/DD/YYYY" [(ngModel)]="newevent.startdate" name="event.startDate"></ion-datetime>
+      </ion-item>
+      <ion-item right>
+        <ion-label>Start time</ion-label>
+        <ion-icon name="time" item-start></ion-icon>
+        <ion-datetime displayFormat="h:m:s A" [(ngModel)]="newevent.starttime" name="event.starttime"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>End date</ion-label>
+        <ion-icon name="calendar" item-start></ion-icon>
+
+        <!-- <ion-textarea [(ngModel)]="newevent.enddate" name="description"></ion-textarea> -->
+        <ion-datetime displayFormat="DD MMM YYYY" pickerFormat="MM/DD/YYYY" [(ngModel)]="newevent.enddate" name="event.endDate"></ion-datetime>
+      </ion-item>
+      <ion-item right>
+        <ion-label>End time</ion-label>
+        <ion-icon name="time" item-start></ion-icon>
+
+        <ion-datetime displayFormat="h:m:s A" [(ngModel)]="newevent.endtime" name="event.endtime"></ion-datetime>
+      </ion-item>
+
+
+      <!-- <ion-item>
+          <ion-label>Emotional status</ion-label>
+          <ion-textarea [(ngModel)]="newevent.emotion" name="description"></ion-textarea>
+        </ion-item> -->
+
+<!-- röd
+grön
+blå -->
+
+      <ion-item>
+
+        <ion-range min="0" max="5" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q2" name="d" color="gron">
+          <ion-label range-left class="level-label">Grön</ion-label>          
+        </ion-range>
+        <ion-range min="0" max="5" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q3" name="d" color="rod">
+          <ion-label range-left class="level-label">Röd</ion-label>
+        </ion-range>
+        <ion-range min="0" max="5" step="1" pin="true" snaps="true" [(ngModel)]="responsesq1.q4" name="d" color="bla">
+          <ion-label range-left class="level-label">Blå</ion-label>
+        </ion-range>
+      
+        <!-- <ion-select [(ngModel)]="newevent.emotion" name="feeling" multiple="false">
+          <ion-option color="dark" [value]="feeling">Driving</ion-option>
+          <ion-option>Soothing</ion-option>
+          <ion-option>Protecting</ion-option>
+        </ion-select> -->
+
+
+
+      </ion-item>
+    </ion-list>
+
+    <button ion-button type="submit" full>Add Event</button>
+
+  </form>
+
+
+</ion-content>
