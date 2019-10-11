@@ -28,12 +28,12 @@ ionic cordova run android
 Jonglera has an intelligent coaching avatar that suggests some activities related with major goals, such as 
 improving physical activities and healthy habits. 
 
-<img src="https://people.cs.umu.se/esteban/proj/img/portfolio/jonglera2.png" width="400" />
+<img src="https://people.cs.umu.se/esteban/proj/img/portfolio/jonglera2.png" width="800" />
 
 First, it is necessary to pick an avatar that will be your coach. The coach can be 
 personalized and it depends on your selection, the feedback responses will change.
 
-<img src="https://people.cs.umu.se/esteban/proj/img/portfolio/jonglera3.png" width="400" />
+<img src="https://people.cs.umu.se/esteban/proj/img/portfolio/jonglera3.png" width="800" />
 
 Jonglera has three main services: 1) track physical activities using internal sensors; 2) manage activities during your day (calendar and list activities); and 3) define your main goals.
 
@@ -41,7 +41,7 @@ Jonglera has three main services: 1) track physical activities using internal se
 
 Jonglera is an agent-based platform with three main components or nodes: 1) the mobile node (this GitHub software), which contains different modules to display user information, modules for input/output exchange, for getting data form internal sensors of the mobile phone, and a module for storing information; 2) a server node, where our agent platform and  an argumentation system run (provided by servers in the Department of Computing Science at Umeå university); and 3) a knowledge repository node, which is an ontology-based repository (http://acktus.cs.umu.se) for obtaining, updating, storing user information.
 
-<img src="https://people.cs.umu.se/esteban/proj/img/portfolio/jonglera_arch.png" width="400" />
+<img src="https://people.cs.umu.se/esteban/proj/img/portfolio/jonglera_arch.png" width="800" />
 
 
 ### User
