@@ -41,7 +41,7 @@
     "cordova-plugin-geolocation": "^4.0.1",
     "cordova-plugin-googlemaps": "^2.3.11",
     "cordova-plugin-ionic-keyboard": "^2.1.2",
-    "cordova-plugin-ionic-webview": "^2.0.2",
+    "cordova-plugin-ionic-webview": "^2.2.0",
     "cordova-plugin-speechrecognition": "1.2.0",
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-vibration": "^3.1.0",
